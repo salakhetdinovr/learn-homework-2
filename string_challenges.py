@@ -20,11 +20,8 @@ print(sum)
 
 # Вывести количество слов в предложении
 sentence = 'Мы приехали в гости'
-sum_2 = 0
-for x in sentence.split(' '):
-    sum_2 += 1
-print(sum_2)
-
+z = sentence.split(' ')
+print(len(z))
 
 
 # Вывести первую букву каждого слова на отдельной строке
@@ -35,5 +32,9 @@ for x in sentence.split(' '):
 
 # Вывести усреднённую длину слова.
 sentence = 'Мы приехали в гости'
-for x in sentence.split(' '):
-    print(len(x) / 2)
+sum_2 = 0
+z = sentence.split(' ')
+for x in z:
+    sum_2 += len(x)
+y = sum_2 / len(z)
+print(y)

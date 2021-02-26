@@ -62,10 +62,10 @@ groups = [
   ['Оля', 'Петя', 'Гриша'],
 ]
 
-x = 0 
+x = 1 
 for element in range(len(groups)):
     x += 1
-    print('Группа', x, ':', ', '.join(groups[element]))
+    print(f'Группа {x} : {", ".join(groups[element])}')
 
 
 
